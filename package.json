@@ -1,0 +1,14 @@
+{
+	"name": "auth-example",
+	"private": true,
+	"workspaces": [
+		"backend",
+		"frontend"
+	],
+	"scripts": {
+		"dev": "concurrently \"npm run dev:backend --workspace=backend\" \"npm run dev:frontend --workspace=frontend\""
+	},
+	"devDependencies": {
+		"concurrently": "^9.1.2"
+	}
+}
